@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Hagrid Trial';
+    src: url('../public/fonts/hagrid-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Hagrid Trial', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $color-charcoal-brown;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.spacer {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-ivory;
+    font-size: 1.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.text-lite {
+    font-weight: 400;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 72px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 72px 16px 28px;
+
+    @include respond-to(desktop) {
+        padding: 86px 42px 65px;
+    }
+}

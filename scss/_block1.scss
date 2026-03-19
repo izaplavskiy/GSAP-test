@@ -1,0 +1,76 @@
+.block1 {
+    background-color: $color-sand-beige;
+
+    @include respond-to(desktop) {
+        padding: 58px 42px 65px;
+    }
+
+    &__top {
+        margin-bottom: 113px;
+
+        @include respond-to(desktop) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 39px;
+
+        @include respond-to(desktop) {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            float: left;
+            padding-right: 200px;
+        }
+    }
+
+    &__top-text {
+        font-size: 20px;
+        line-height: 1.5;
+
+        @include respond-to(desktop) {
+            font-size: 35px;
+        }
+
+        .line {
+            display: block;
+            position: relative;
+        }
+
+        .line-mask {
+            position: absolute;
+            inset: 0;
+            background: rgba($color-sand-beige, 0.8);
+            transform-origin: 100% 50%;
+        }
+    }
+
+    &__bottom {
+        @include respond-to(tablet) {
+            display: grid;
+            grid-template-columns: 265px 1fr;
+            gap: 43%;
+            align-items: end;
+        }
+    }
+
+    &__bottom-img {
+        margin-bottom: 39px;
+        height: 362px;
+        object-fit: cover;
+
+        @include respond-to(tablet) {
+            height: 263px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__inner-text {
+        margin-bottom: 24px;
+        font-weight: 400;
+        will-change: transform;
+    }
+}

@@ -1,0 +1,140 @@
+.pin-mask {
+    position: relative;
+    height: 300vh;
+}
+
+#maskPin {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    height: 100vh;
+
+    &:before {
+        content: '';
+        background: $color-terracotta;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.masked-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+    mask-composite: destination-out;
+    -webkit-mask-composite: destination-out;
+    mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='280' viewBox='0 0 200 280'%3E%3Cpath fill='%23C4C4C4' d='M20 100 A80 80 0 0 1 180 100 L180 280 L20 280 Z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: auto 28vh;
+    -webkit-mask-size: auto 28vh;
+    mask-position: center 38%;
+    -webkit-mask-position: center 38%;
+    overflow: hidden;
+}
+
+.block2 {
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    overflow: hidden;
+
+    &__bg {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__content {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: auto;
+        padding: 72px 16px 28px;
+
+        @include respond-to(desktop) {
+            padding: 86px 42px 65px;
+        }
+    }
+
+    &__top {
+        @include respond-to(desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__bottom {
+        margin-top: auto;
+
+        @include respond-to(desktop) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    &__bottom-left {
+        margin-bottom: 42px;
+
+        @include respond-to(desktop) {
+            max-width: 355px;
+            margin: 0;
+        }
+    }
+
+    &__bottom-left-title {
+        font-size: 25px;
+        margin-bottom: 16px;
+
+        @include respond-to(desktop) {
+            font-size: 35px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .slides-wrap {
+        position: absolute;
+        inset: 0;
+    }
+
+    .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 0.9s ease;
+    }
+    .slide.active {
+        opacity: 1;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}

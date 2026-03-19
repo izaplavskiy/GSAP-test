@@ -1,0 +1,107 @@
+.morph-section {
+    background: $color-charcoal-brown;
+    padding: 0;
+    position: relative;
+
+    .decor-centered-line {
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        background-color: #413733;
+    }
+
+    .stage {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .morph-svg {
+        overflow: visible;
+    }
+
+    .num {
+        position: absolute;
+        right: 16px;
+        top: 17px;
+        font-size: clamp(110px, 14vw, 300px);
+        user-select: none;
+        z-index: 10;
+        line-height: 1;
+
+        @include respond-to(desktop) {
+            right: 35px;
+            top: 20px;
+        }
+    }
+
+    #num1,
+    #num2,
+    #bottom1,
+    #bottom2 {
+        color: $color-ivory;
+    }
+
+    #num3,
+    #bottom3,
+    #label3 .who-label {
+        color: $color-terracotta;
+    }
+
+    .label-screen {
+        position: absolute;
+        left: 16px;
+        top: 25px;
+        z-index: 10;
+
+        @include respond-to(desktop) {
+            left: 40px;
+            top: 40px;
+        }
+    }
+
+    .who-label {
+        font-size: 22px;
+        color: $color-ivory;
+
+        @include respond-to(desktop) {
+            font-size: 30px;
+        }
+    }
+
+    .bottom-screen {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        z-index: 10;
+        max-width: 240px;
+
+        @include respond-to(desktop) {
+            max-width: 470px;
+            left: 45px;
+            bottom: 27px;
+        }
+    }
+
+    .audience-title {
+        font-size: 18px;
+
+        @include respond-to(desktop) {
+            font-size: 22px;
+        }
+    }
+
+    .audience-desc {
+        @include respond-to(desktop) {
+            font-size: 16px;
+        }
+    }
+
+    .line-mask {
+        overflow: hidden;
+    }
+}

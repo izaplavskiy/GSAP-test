@@ -1,0 +1,18 @@
+$value-small: 768px;
+$value-large: 1200px;
+
+@mixin respond-to($breakpoint) {
+    // min-width 768px
+    @if $breakpoint == 'tablet' {
+        @media (min-width: $value-small) {
+            @content;
+        }
+    }
+
+    // min-width 1200px
+    @if $breakpoint == 'desktop' {
+        @media (min-width: $value-large) {
+            @content;
+        }
+    }
+}

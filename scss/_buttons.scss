@@ -1,0 +1,29 @@
+.btn {
+    font-family: 'Hagrid Trial', sans-serif;
+    display: flex;
+    padding: 34px 15px 15px 15px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    @include respond-to(tablet) {
+        width: 280px;
+    }
+
+    &.btn-dark {
+        background-color: $color-charcoal-brown;
+        color: #fff;
+    }
+
+    &.btn-white {
+        background-color: #fff;
+        color: $color-charcoal-brown;
+    }
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>gsap-test-task</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="spacer">↓ scroll</div>
+
+    <main>
+      <section class="block1">
+        <div class="block1__top">
+          <span class="block1__subtitle">/ About Base39</span>
+          <div class="block1__top-text text-reveal">
+            Base39 is a creative ecosystem built to connect people, ideas, and opportunities. It brings together
+            creators,
+            startups,
+            brands, and institutions in a shared environment where collaboration is encouraged and ideas can evolve into
+            meaningful
+            initiatives.
+          </div>
+        </div>
+        <div class="block1__bottom">
+          <img class="block1__bottom-img" src="./public/assets/images/house.jpg" alt="">
+          <div class="block1__bottom-text">
+            <p class="block1__inner-text">Through flexible spaces, shared resources, and a community-driven approach,
+              Base39 supports creative professionals at
+              different stages of their journey.</p>
+            <button class="btn btn-dark">Learn More About Base39</button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- block2 -->
+      <div class="pin-mask">
+        <div id="maskPin">
+          <div class="masked-wrapper" id="maskedWrapper">
+            <section class="block2">
+              <div class="slider">
+                <div class="slide active">
+                  <img src="./public/assets/images/office.png" alt="Office">
+                </div>
+                <div class="slide">
+                  <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80" alt="Coworking">
+                </div>
+                <div class="slide">
+                  <img src="./public/assets/images/office2.png" alt="Office">
+                </div>
+              </div>
+              <div class="block2__content">
+                <div class="block2__top" id="blockTop">
+                  <p class="block2__top-left text-lite">More than a workspace —</p>
+                  <p class="block2__top-right text-lite">
+                    a place where ideas slow down, connect
+                  </p>
+                </div>
+                <div class="block2__bottom" id="blockBottom">
+                  <div class="block2__bottom-left">
+                    <h2 class="block2__bottom-left-title" id="slideTitle">
+                      Startups & Entrepreneurs
+                    </h2>
+                    <p class="block2__bottom-left-text text-lite" id="slideText">
+                      Early-stage teams and founders building creative-driven products.
+                    </p>
+                  </div>
+                  <button class="btn btn-white">Learn more</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <!-- block3 -->
+      <section class="morph-section">
+
+        <div class="decor-centered-line"></div>
+
+        <!-- Labels -->
+        <div class="label-area">
+          <div class="label-screen" id="label1">
+            <div class="who-label">Who It's For</div>
+          </div>
+          <div class="label-screen" id="label2">
+            <div class="who-label">Who It's For</div>
+          </div>
+          <div class="label-screen" id="label3">
+            <div class="who-label">Who It's For</div>
+          </div>
+        </div>
+
+        <!-- Bottom text -->
+        <div class="label-bottom">
+          <div class="bottom-screen" id="bottom1">
+            <h2 class="audience-title">Creators & Artists</h2>
+            <p class="audience-desc">Independent Creatives Exploring New Ideas, Formats, And Collaborations Across
+              Art,
+              Design, Media, And Culture.
+            </p>
+          </div>
+          <div class="bottom-screen" id="bottom2">
+            <h2 class="audience-title">Startups & Entrepreneurs</h2>
+            <p class="audience-desc">Early-Stage Teams And Founders Building Creative-Driven Products, Services, And
+              Platforms.</p>
+          </div>
+          <div class="bottom-screen" id="bottom3">
+            <h2 class="audience-title">Brands & Businesses</h2>
+            <p class="audience-desc">Companies Looking To Collaborate With Creative Talent, Test Concepts, Or Engage
+              With New
+              Audiences.</p>
+          </div>
+        </div>
+
+        <!-- Number -->
+        <div class="screen-number">
+          <div class="num" id="num1">1</div>
+          <div class="num" id="num2">2</div>
+          <div class="num" id="num3">3</div>
+        </div>
+
+
+        <div class="stage">
+          <svg class="morph-svg" width="537" height="179" viewBox="0 0 537 179" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <rect id="shape-center" x="180.76" width="178.12" height="178.12" rx="89.0602" fill="#E6D2B5" />
+            <path id="shape-left"
+              d="M178.423 178.456H89.2109C138.481 178.456 178.423 138.514 178.423 89.2441C178.423 39.9742 138.481 0.0332031 89.2109 0.0332031C39.9411 0.0334052 0.000121011 39.9743 0 89.2441C0 138.514 39.941 178.456 89.2109 178.456H0V0.0332031H178.423V178.456Z"
+              fill="#E6D2B5" />
+            <rect id="shape-right" x="358.88" width="178.12" height="178.12" fill="#E6D2B5" />
+
+            <path id="line" d="M0 288V226.443L175 0V63.7557L0 288Z" fill="#A9472C" />
+          </svg>
+
+        </div>
+
+      </section>
+
+
+      <div class="spacer">— end —</div>
+
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
