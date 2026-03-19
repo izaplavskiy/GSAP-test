@@ -1,6 +1,6 @@
-const splitTargets = document.querySelectorAll(
-    '.audience-title, .audience-desc, .who-label',
-)
+// const splitTargets = document.querySelectorAll(
+//     '.audience-title, .audience-desc, .who-label',
+// )
 
 splitTargets.forEach((el) => {
     const split = new SplitType(el, { types: 'lines' })
