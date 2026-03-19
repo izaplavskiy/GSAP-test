@@ -1,9 +1,11 @@
-// const wrapper = document.getElementById('maskedWrapper')
-// const blockTop = document.getElementById('blockTop')
-// const blockBot = document.getElementById('blockBottom')
-// const slideEls = document.querySelectorAll('.slide')
-// const titleEl = document.getElementById('slideTitle')
-// const textEl = document.getElementById('slideText')
+const wrapper = document.getElementById('maskedWrapper')
+const blockTop = document.getElementById('blockTop')
+const blockBot = document.getElementById('blockBottom')
+const slideEls = document.querySelectorAll('.slide')
+const titleEl = document.getElementById('slideTitle')
+const textEl = document.getElementById('slideText')
+
+// added some code
 
 let current = 0
 let timer
