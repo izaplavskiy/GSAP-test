@@ -1,5 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger)
-
 const wrapper = document.getElementById('maskedWrapper')
 const blockTop = document.getElementById('blockTop')
 const blockBot = document.getElementById('blockBottom')
